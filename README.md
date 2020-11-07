@@ -1,4 +1,4 @@
-# Code100-1-VarAndManageData
+# Code100-1-VariableAndManageData
 
 #Working with Variables in Python to Manage Data
 
