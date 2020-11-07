@@ -17,3 +17,13 @@ petname = input("\nWhat's your pet name:\n")
 
 #4. Combine the name of their city and pet and show them their band name.
 print("\nYour bandname is:\n" + petname + " " + cityname)
+
+
+
+
+
+#Other non releated but useful bits:
+
+#Returns the length/number of characters of the varible within ()
+n="Hello World!"
+print(len(n))
