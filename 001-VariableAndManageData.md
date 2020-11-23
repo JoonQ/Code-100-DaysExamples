@@ -27,3 +27,7 @@ print("\nYour bandname is:\n" + petname + " " + cityname)
 #Returns the length/number of characters of the varible within ()
 n="Hello World!"
 print(len(n))
+
+#Note: This would return an error as len() does not like integers
+n="123456"
+print(len(n))
