@@ -1,0 +1,36 @@
+#Write a program that adds the digits in a 2 digit number. e.g. if the input was 35, then the output should be 3 + 5 = 8
+
+
+
+
+#Request user to enter two digits
+two_digit_number = input("Type a two digit number: ")
+
+
+
+# Lets first check the data type entered.
+print(type(two_digit_number))
+# Tells us that this is a string data
+
+
+
+# Select the first digit(position 0) of data entered. Lets name this as FirstDigit.
+FirstDigit=two_digit_number[0]
+# Printing onscreen to check
+print("First Digit is: ")
+print(FirstDigit)
+
+#Select the second digit(position 1) of data entered. Lets name this as SecondDigit.
+print("Second Digit is: ")
+SecondDigit=two_digit_number[1]
+# Printing onscreen to check
+print(SecondDigit)
+
+
+
+#Converts both string data to integer data so that we can perform math operation(adding).
+Result = int(FirstDigit) + int(SecondDigit)
+
+# Prints out result
+print("Sum of First Digit and Second Digit: ")
+print(Result)
