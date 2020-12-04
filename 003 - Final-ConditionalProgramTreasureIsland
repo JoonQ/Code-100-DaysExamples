@@ -1,0 +1,55 @@
+# Conditional Programme highlighting difference between If, Elif, Else and Multiple If, If Else.
+# To make the understanding easier this is demostrated with a Treasure Island game.  
+
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Ask user question and request user for input.
+choice1 = input('\nYou are at a cross-road. Which path would you choose? Type "Left" or "Right"\n').lower()
+if choice1 == "left":
+  
+  #Ask user question and request user for input.
+  choice2 = input('\nYou have come to a river at high tide. Would you choose to swim or wait? Type "Swim" or "Wait"\n')
+  if choice2 == "wait":
+    
+    # Notice if, elif, elif, else is used in this indented section. This would enable only one choice to be run. Namely "You Win"
+    # If it was if, if, if, else. typing yellow will yield two print statement namely "You Win" and "Game Over"
+    choice3 = input('\nYou have come to three doors. Which would you open? Type "Red", "Yellow" or "Blue"\n').lower()
+    if choice3 == "red":
+      print("\nBurned by fire. Game Over\n")
+    elif choice3 == "yellow":
+      print("\nYou Win!\n")
+    elif choice3 == "blue":
+      print("\nEaten by beasts. Game Over\n")
+    else:
+      print("\nGame Over\n")
+  
+  
+  else:
+    print("\nAttacked by trout. Game Over\n")
+else:
+    print('\nFallen into a hole. Game Over\n')
